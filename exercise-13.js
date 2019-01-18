@@ -2,9 +2,7 @@
 function deepSum (arr) {
   var sum = 0
   var isEmpty = true
-  if(arr.length < 1) {
-    return 'No number'
-  } else {
+  if(arr.length > 0) {
     for(var i = 0; i < arr.length; i++) {
       if(arr[i].length > 0) {
         for(var j = 0; j < arr[i].length; j++) {
@@ -70,3 +68,9 @@ console.log(deepSum([
 ])); // 156
 
 console.log(deepSum([])); // No number
+
+console.log(deepSum([
+  [
+    [0]
+  ]
+])); // 0
