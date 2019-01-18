@@ -10,7 +10,7 @@ function countProfit(shoppers) {
   } else {
     var itemList = []
     for(var i = 0; i < listBarang.length; i++) {
-      itemList.push(item = {
+      itemList.push({
         product : listBarang[i][0],
         shoppers : [],
         leftOver : listBarang[i][2],
