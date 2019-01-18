@@ -9,16 +9,13 @@ function graduates (students) {
     for(var i = 0; i < students.length; i++) {
       if(students[i].score > limit) {
         if(!data[students[i].class]) {
-          data[students[i].class] = [{
-            name : students[i].name,
-            score: students[i].score
-          }]
-        } else {
-          data[students[i].class].push({
-            name : students[i].name,
-            score: students[i].score
-          })
-        }
+          data[students[i].class] = []
+        } 
+        
+        data[students[i].class].push({
+          name: students[i].name,
+          score: students[i].score
+        })
       }
     }
     return data

@@ -10,12 +10,12 @@ function highestScore (students) {
           name : students[i].name,
           score: students[i].score
         }
-      } else {
-        if(students[i].score > data[students[i].class].score) {
-          data[students[i].class].name = students[i].name
-          data[students[i].class].score = students[i].score
-        }
-      }      
+      } 
+      
+      if(students[i].score > data[students[i].class].score) {
+        data[students[i].class].name = students[i].name
+        data[students[i].class].score = students[i].score
+      }
     }
     return data
   }
