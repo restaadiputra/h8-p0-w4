@@ -2,8 +2,6 @@
 function angkaPrima(angka) {
   if(angka < 2) {
     return false;
-  } else if(angka === 2) {
-    return true;
   } else {
     var i = 2;
     while(i < angka) {
